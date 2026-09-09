@@ -8,20 +8,20 @@ class Fossc < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/VanshSahay/fossc/releases/download/v1.0.0/fossc_1.0.0_darwin_arm64.tar.gz"
-      sha256 "fca501c93a582dabe77a043c4f12d7473490809627bf88775585eabc70244e11"
+      sha256 "d0da088eebed1b9b0839d540a3c6f15e0b64a161a55c0770b676a5d6339f68f3"
     else
       url "https://github.com/VanshSahay/fossc/releases/download/v1.0.0/fossc_1.0.0_darwin_amd64.tar.gz"
-      sha256 "abd1f428d18d6fe56c1bcfa327e93e5d5fde8a55e094874348abfaeff967748b"
+      sha256 "7f3230d2b64029c4e17d9170c37e2ea37e46c69564dff0177c5eaa5b250bac67"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/VanshSahay/fossc/releases/download/v1.0.0/fossc_1.0.0_linux_arm64.tar.gz"
-      sha256 "20096a941eb35ffb3dbcaa987e203a34d44874252d3fd4d94164026de21c7b41"
+      sha256 "55a47a9a2cfd721abbdd80ffe1f4a88e56a6a6ef45ed95c84d882b90afdb1e0e"
     else
       url "https://github.com/VanshSahay/fossc/releases/download/v1.0.0/fossc_1.0.0_linux_amd64.tar.gz"
-      sha256 "6cbdc3d623666ea96e3968cbee4e894edfc2c145162474c96d41835023529da3"
+      sha256 "c531d156df92a850304dd61b7631c3db273efb186cb3b1efca5a6620297af0b9"
     end
   end
 
